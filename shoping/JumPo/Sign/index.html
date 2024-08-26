@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JumPo</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+    <!-- <script defer src="index.js"></script> -->
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../Picture/logo.png" alt="">
+        </div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+        <nav>
+            <ul>
+                <li><a href="../Home/index.html">Home</a></li>
+                <li><a href="../Product/index.html">Shop</a></li>
+                <li><a href="../Check/index.html">Purchase</a></li>
+                <li><a href="../Sign/index.html">Contact</a></li>
+                <li><a href="../Cart/index.html">Cart</a></li>
+                <li id="user-info"><a href="../User/index.html">User</a></li>
+            </ul>
+        </nav>
+        <div class="search-cart">
+            <input type="text" id="search-input" placeholder="Search..." size="20">
+            <button class="cart-icon" onclick="location.href='cart.html'">Cart (0)</button>
+        </div>
+        <div id="search-results" class="search-results"></div>
+        
+    </header>
+    
+
+
+    <!-- Sign Up Section -->
+    <section class="signup">
+        <h2>Create an Account</h2>
+        <form id="signup-form">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+            </div>
+            <button type="submit" class="signup-btn">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="../Sign/index.html">Log In</a></p>
+    </section>
+
+    <!-- Log In Section -->
+    <section class="login">
+        <h2>Log In</h2>
+        <form id="login-form">
+            <div class="form-group">
+                <label for="login-email">Email:</label>
+                <input type="email" id="login-email" required>
+            </div>
+            <div class="form-group">
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" required>
+            </div>
+            <button type="submit" class="login-btn">Log In</button>
+        </form>
+        <p>Don't have an account? <a href="../User/index.html">Sign Up</a></p>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2024  JumPo. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

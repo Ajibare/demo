@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JumPo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <    <header>
+        <div class="logo">
+            <img src="logo.png" alt="">
+        </div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+        <nav>
+            <ul>
+                <li><a href="../Home/index.html">Home</a></li>
+                <li><a href="../Product/index.html">Shop</a></li>
+                <li><a href="../Check/index.html">Purchase</a></li>
+                <li><a href="../Sign/index.html">Contact</a></li>
+                <li><a href="../Cart/index.html">Cart</a></li>
+                <li id="user-info"><a href="../User/index.html">User</a></li>
+            </ul>
+        </nav>
+        <div class="search-cart">
+            <input type="text" id="search-input" placeholder="Search..." size="20">
+            <button class="cart-icon" onclick="location.href='cart.html'">Cart (0)</button>
+        </div>
+        <div id="search-results" class="search-results"></div>
+        
+    </header>
+    
+
+    <!-- Product Details Section -->
+    <section class="product-details">
+        <div class="product-image">
+            <img src="../Picture/chair.jpg" alt="chair">
+        </div>
+        <div class="product-info">
+            <h1>Portable Chair</h1>
+            <p>$20.99</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </section>
+    <section class="product-details">
+        <div class="product-image">
+            <img src="../Picture/blender.jpg" alt="Blender">
+        </div>
+        <div class="product-info">
+            <h1>Blender</h1>
+            <p>$40.99</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </section>
+    <section class="product-details">
+        <div class="product-image">
+            <img src="../Picture/powerbank.jpg" alt="Power bank">
+        </div>
+        <div class="product-info">
+            <h1>Power bank</h1>
+            <p>$16.17</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </section>
+    <section class="product-details">
+        <div class="product-image">
+            <img src="../Picture/glass.jpg" alt="Glass">
+        </div>
+        <div class="product-info">
+            <h1>VIP Cup</h1>
+            <p>$5.78</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </section>
+  
+
+    <footer>
+        <p>&copy; 2024 JumPo. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
